@@ -18,17 +18,17 @@ int main(void) {
 	char winner_name[30] = { 0 };
 	CINFO* p;
 
-	printf("¸î¸í¿¡¼­ ÇÃ·¹ÀÌ ÇÏ´Â°¡?");
+	printf("ëª‡ëª…ì—ì„œ í”Œë ˆì´ í•˜ëŠ”ê°€?");
 	scanf_s("%d", &peo_num);
 	p = (CINFO*)calloc(peo_num, sizeof(CINFO));
 
-	printf("ÀÌ¸§ ÀÔ·Â : \n");
+	printf("ì´ë¦„ ì…ë ¥ : \n");
 	for (i = 0; i < peo_num; i++)
 	{
 		scanf_s("%s", p[i].name, sizeof(p[i].name));
 	}
 
-	printf("1ÀÎ´ç ÃÑ Ä¨ °¹¼ö : ");
+	printf("1ì¸ë‹¹ ì´ ì¹© ê°¯ìˆ˜ : ");
 	scanf_s("%d", &total_score);
 	for (i = 0; i < peo_num; i++)
 	{
@@ -40,16 +40,16 @@ int main(void) {
 		if (peo_num == 2)
 		{
 			printf("\n\t%s \t%s\n", p[0].name, p[1].name);
-			printf("Ä¨ °¹¼ö %d \t%d\n", p[0].total_chip, p[1].total_chip);
+			printf("ì¹© ê°¯ìˆ˜ %d \t%d\n", p[0].total_chip, p[1].total_chip);
 
-			printf("\n¹èÆÃ ¼ö\n");
+			printf("\në°°íŒ… ìˆ˜\n");
 			for (i = 0; i < peo_num; i++)
 			{
 				printf("%s : ", p[i].name);
 				scanf_s("%d", &p[i].bet);
 			}
 
-			printf("ÀÌ±ä »ç¶÷ : ");
+			printf("ì´ê¸´ ì‚¬ëŒ : ");
 			scanf_s("%d", &winner);
 			printf("\n");
 			winner = winner - 1;
@@ -71,14 +71,14 @@ int main(void) {
 		if (peo_num == 3)
 		{
 			printf("\t%s \t%s \t%s\n", p[0].name, p[1].name, p[2].name);
-			printf("Ä¨ °¹¼ö %d \t%d \t%d\n", p[0].total_chip, p[1].total_chip, p[2].total_chip);
-			printf("¹èÆÃ ¼ö\n");
+			printf("ì¹© ê°¯ìˆ˜ %d \t%d \t%d\n", p[0].total_chip, p[1].total_chip, p[2].total_chip);
+			printf("ë°°íŒ… ìˆ˜\n");
 			for (i = 0; i < peo_num; i++)
 			{
 				printf("%s : ", p[i].name);
 				scanf_s("%d", &p[i].bet);
 			}
-			printf("ÀÌ±ä »ç¶÷ : ");
+			printf("ì´ê¸´ ì‚¬ëŒ : ");
 			scanf_s("%d", &winner);
 			printf("\n");
 			winner = winner - 1;
@@ -100,15 +100,15 @@ int main(void) {
 		if (peo_num == 4)
 		{
 			printf("\t%s \t%s \t%s \t%s\n", p[0].name, p[1].name, p[2].name, p[3].name);
-			printf("Ä¨ °¹¼ö %d \t%d \t%d \t%d\n", p[0].total_chip, p[1].total_chip, p[2].total_chip, p[3].total_chip);
-			printf("¹èÆÃ ¼ö\n");
+			printf("ì¹© ê°¯ìˆ˜ %d \t%d \t%d \t%d\n", p[0].total_chip, p[1].total_chip, p[2].total_chip, p[3].total_chip);
+			printf("ë°°íŒ… ìˆ˜\n");
 			for (i = 0; i < peo_num; i++)
 			{
 				printf("%s : ", p[i].name);
 				scanf_s("%d", &p[i].bet);
 			}
 
-			printf("ÀÌ±ä »ç¶÷ : ");
+			printf("ì´ê¸´ ì‚¬ëŒ : ");
 			scanf_s("%d", &winner);
 			printf("\n");
 			winner = winner - 1;
